@@ -1,0 +1,9 @@
+2025/06/25-13:37:04.844 5cc8 Reusing MANIFEST D:\Heal.app\whatsapp-messenger\tokens\default\Default\Local Storage\leveldb/MANIFEST-000001
+2025/06/25-13:37:04.848 5cc8 Recovering log #7
+2025/06/25-13:37:04.849 5cc8 Reusing old log D:\Heal.app\whatsapp-messenger\tokens\default\Default\Local Storage\leveldb/000007.log 
+2025/06/25-15:34:05.089 5ea8 Level-0 table #11: started
+2025/06/25-15:34:05.091 5ea8 Level-0 table #11: 12612 bytes OK
+2025/06/25-15:34:05.092 5ea8 Delete type=0 #7
+2025/06/25-16:49:05.082 5ea8 Level-0 table #13: started
+2025/06/25-16:49:05.085 5ea8 Level-0 table #13: 12210 bytes OK
+2025/06/25-16:49:05.086 5ea8 Delete type=0 #10
