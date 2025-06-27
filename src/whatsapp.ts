@@ -35,7 +35,7 @@ export const sendConfirmationMessage = async (
 
   const jid = result.id._serialized;
 
-  const confirmationLink = `http://localhost:3000/confirm/${confirmationToken}`;
+  const confirmationLink = `https://healapp-prototype.netlify.app/confirm/${confirmationToken}`;
   const message = `Olá ${patientName}! 👋
 
 Você tem uma consulta agendada.
