@@ -12,6 +12,7 @@ export const initWhatsapp = async () => {
     statusFind: (statusSession) => {
       console.log('🟡 Status da sessão:', statusSession);
     },
+    browserArgs: ['--no-sandbox', '--disable-setuid-sandbox'], // 👈 ESSA LINHA RESOLVE
   });
 };
 

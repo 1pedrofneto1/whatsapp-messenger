@@ -35,12 +35,14 @@ COPY . .
 # Instala dependências do Node.js
 RUN npm install
 
-# Variável obrigatória para Puppeteer apontar para o Chromium instalado
+# Variáveis de ambiente para Puppeteer
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV NODE_ENV=production
+ENV TZ=America/Sao_Paulo
 
 # Expõe a porta usada pelo seu servidor
 EXPOSE 3001
 
-# Comando para iniciar a aplicação
+# Inicia a aplicação
 CMD ["npm", "start"]
