@@ -12,7 +12,23 @@ export const initWhatsapp = async () => {
     statusFind: (statusSession) => {
       console.log('🟡 Status da sessão:', statusSession);
     },
-    browserArgs: ['--no-sandbox', '--disable-setuid-sandbox'], // 👈 ESSA LINHA RESOLVE
+    puppeteerOptions: {
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-extensions',
+        '--disable-gpu',
+        '--no-first-run',
+        '--no-zygote',
+        '--single-process',
+        '--disable-background-networking',
+        '--disable-default-apps',
+        '--disable-sync',
+        '--metrics-recording-only',
+      ],
+      protocolTimeout: 60000, // ✅ aqui sim está certo!
+    },
   });
 };
 
