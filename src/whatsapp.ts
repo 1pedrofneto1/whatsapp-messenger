@@ -37,6 +37,7 @@ export const sendConfirmationMessage = async (
   patientName: string,
   confirmationToken: string
 ) => {
+  console.log(client);
   if (!client) throw new Error('Cliente WhatsApp não inicializado.');
 
   const rawNumber = phone.replace(/\D/g, '');
